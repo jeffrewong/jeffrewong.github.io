@@ -55,6 +55,12 @@ section h3.section-subheading {
   }
 }
 
+@media (min-width: 768px) {
+  section#contact {
+    padding: 75px 0;
+  }
+}
+
 .btn {
   font-family: 'proxima_nova_ltsemibold', sans-serif;
   font-weight: 700;
