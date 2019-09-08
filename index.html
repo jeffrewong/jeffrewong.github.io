@@ -23,7 +23,7 @@
 	<script>
 		function generateInfo(){
 			var output = document.getElementById("contact-info");
-			output.innerHTML = "Email: jwong" + "0820" + "@bths.edu <br/>" + "Telephone: " + "123-456" + "-7890 <br />"  ;
+			output.innerHTML = "Email: jeffrey.wong" + ".3" + "@stonybrook.edu <br/>" + "Telephone: " + "646-239" + "-1376 <br />"  ;
 		}
 	</script>
 
@@ -88,7 +88,7 @@
               <i class="fas fa-database fa-stack-1x fa-inverse"></i>
             </span>
             <h4 class="service-heading">A Programmer</h4>
-            <p class="">I am an enthusiastic programmer with experience in Java, Python, Ruby, and SQL/MySQL. I also have some experience in web development and have some knowledge of HTML, CSS, Javascript and PHP. </p>
+            <p class="">I am an enthusiastic programmer with experience in Java, Python, C, and SQL/MySQL. I also have some experience in web development and have some knowledge of HTML, CSS, JavaScript and PHP. </p>
           </div>
           <div class="col-md-4">
             <span class="fa-stack fa-4x">
@@ -107,10 +107,24 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading">Portfolio</h2>
-            <h3 class="section-subheading">Some projects that I have done:</h3>
+            <h3 class="section-subheading">Some projects that I have worked on:</h3>
           </div>
         </div>
         <div class="row">
+		<div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/gerrymandering.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>State Redistricting System</h4>
+              <p class="text-muted">CSE308 Project</p>
+            </div>
+          </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
               <div class="portfolio-hover">
@@ -249,7 +263,39 @@
       </div>
     </section>
 
-
+	<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h2 class="text-uppercase">State Redistricting System</h2>
+                  <p class="item-intro text-muted"></p>
+                  <img class="img-fluid d-block mx-auto" src="img/gerrymandering.png" alt="">
+                  <p>The goal of this project was to create a system that can rewrite voting district lines such that the new districts are more fair, compact, and representative of the demographics that live in the districts.
+				  The system utilizes AngularJS, HTML, and CSS for the front-end. The back-end uses Java to create a RESTful API for processing client actions such as redistricting a particular state map and saving the results. Saved maps are serialized and deserialized using JDBC and stored in a MySQL database.</p>
+                  <ul class="list-inline">
+                    <li>Date Completed: May 2019</li>
+                    <li>Created for: CSE 308</li>
+					<li>Link to project gitlab <a href = "https://gitlab.com/cse308-s19-expos/gerrymandering">here</a> (Project repository is currently set to private. Please contact me for more details about the project.) </li>
+                  </ul>
+                  <button class="btn" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -359,7 +405,7 @@
                 <div class="modal-body">
                   <h2 class="text-uppercase">Online RPG</h2>
                   <img class="img-fluid d-block mx-auto" src="" alt="">
-                  <p>The goal of this project was to utilize what we have learned in the intro course to create a site that utilizes a database system. This project uses HTML and CSS for the front-end design. Javascript and PHP is used for the back-end functionality and SQL/MySQL is used to process user transactions in-game.</p>
+                  <p>The goal of this project was to utilize what we have learned in the intro course to create a site that utilizes a database system. This project uses HTML and CSS for the front-end design. Javascript and PHP are used for the back-end functionality and SQL/MySQL is used to process user transactions in-game.</p>
                   <ul class="list-inline">
                     <li>Date Completed: June 2016</li>
                     <li>Created for: Brooklyn Technical High School: Introduction to Web Development</li>
